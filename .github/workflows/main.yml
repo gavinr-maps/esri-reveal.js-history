@@ -1,6 +1,9 @@
 name: Main
 
-on: master
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   download-all:
