@@ -1,0 +1,83 @@
+name: Main
+
+on: master
+
+jobs:
+  download-all:
+    name: Download All
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Get copies of each esri/reveal.js release:
+      - name: Download Dev Summit 2021
+        uses: actions/checkout@v2
+        with:
+          repository: 'Esri/reveal.js'
+          ref: 'dev-summit-2021'
+          path: 'dev-summit-2021'
+
+      - name: Download UC 2020
+        uses: actions/checkout@v2
+        with:
+          repository: 'Esri/reveal.js'
+          ref: 'uc-2020'
+          path: 'uc-2020'
+
+      - name: Download Dev Summit 2020
+        uses: actions/checkout@v2
+        with:
+          repository: 'Esri/reveal.js'
+          ref: 'dev-summit-2020'
+          path: 'dev-summit-2020'
+
+      - name: Download UC 2019
+        uses: actions/checkout@v2
+        with:
+          repository: 'Esri/reveal.js'
+          ref: 'uc-2019'
+          path: 'uc-2019'
+
+      - name: Download Dev Summit 2019
+        uses: actions/checkout@v2
+        with:
+          repository: 'Esri/reveal.js'
+          ref: 'dev-summit-2019'
+          path: 'dev-summit-2019'
+
+      - name: Download Fed UC 2018
+        uses: actions/checkout@v2
+        with:
+          repository: 'Esri/reveal.js'
+          ref: 'fed-uc-2018'
+          path: 'fed-uc-2018'
+
+      - name: Download Dev Summit 2018
+        uses: actions/checkout@v2
+        with:
+          repository: 'Esri/reveal.js'
+          ref: 'dev-summit-2018'
+          path: 'dev-summit-2018'
+
+      - name: Download Dev Summit 2017
+        uses: actions/checkout@v2
+        with:
+          repository: 'Esri/reveal.js'
+          ref: 'dev-summit-2017'
+          path: 'dev-summit-2017'
+
+      - name: Download Dev Summit 2016
+        uses: actions/checkout@v2
+        with:
+          repository: 'Esri/reveal.js'
+          ref: 'dev-summit-2016'
+          path: 'dev-summit-2016'
+
+      # Deploy!
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: .
