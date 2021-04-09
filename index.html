@@ -1,43 +1,36 @@
 <html>
-  <head>
-    <title>Esri Conference Slide Template History</title>
-    <style>
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
-        grid-gap: 1rem;
-      }
-      
-      /* This element defines the size the iframe will take.
-         In this example we want to have a ratio of 25:14 */
-      .aspect-ratio {
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-bottom: 56.25%; /* The height of the item will now be 56.25% of the width. */
-      }
-      
-      /* Adjust the iframe so it's rendered in the outer-width and outer-height of it's parent */
-      .aspect-ratio iframe {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-      }
-      </style>
-  </head>
-  <body>
+
+<head>
+  <title>Esri Reveal.js Conference Slide Template History</title>
+  <link rel="stylesheet"
+    href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.5/css/calcite-web.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+  <div id="app" class="app" v-cloak>
     <div class="grid">
-      <div class="aspect-ratio"><iframe src="dev-summit-2021/dev-summit-2021.html"></iframe></div>
-      <div class="aspect-ratio"><iframe src="uc-2020/uc-2020-user-presentation.html"></iframe></div>
-      <div class="aspect-ratio"><iframe src="dev-summit-2020/devsummit-2020.html"></iframe></div>
-      <div class="aspect-ratio"><iframe src="uc-2019/uc-2019.html"></iframe></div>
-      <div class="aspect-ratio"><iframe src="dev-summit-2019/devsummit-2019.html"></iframe></div>
-      <div class="aspect-ratio"><iframe src="fed-uc-2018/feduc-2018.html"></iframe></div>
-      <div class="aspect-ratio"><iframe src="dev-summit-2018/index.html"></iframe></div>
-      <div class="aspect-ratio"><iframe src="dev-summit-2017/index.html"></iframe></div>
-      <div class="aspect-ratio"><iframe src="dev-summit-2016/index.html"></iframe></div>
+      <div class="gridItem" v-for="iframe in iframes">
+        <h2 class="itemTitle">{{ iframe.label }}</h2>
+        <div class="aspect-ratio">
+          <iframe v-bind:src="iframe.url"></iframe>
+        </div>
+      </div>
     </div>
-  </body>
+
+  </div>
+  <footer class="footer link-dark-gray" role="contentinfo">
+    <div class="grid-container">
+      <div class="column-24">
+        <p>The <a href="https://github.com/esri/reveal.js">Reveal.js templates</a> were created by duplicating the
+          official slide deck
+          template as close as possible. The size and alignment of the text may not be exact with the original
+          design.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>
