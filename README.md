@@ -1,6 +1,6 @@
 # Esri Reveal.js History
 
-Showing a history of the Esri Reveal.js conference slide templates through the years.
+Showing a history of the [Esri Reveal.js conference slide templates](https://github.com/esri/reveal.js) through the years.
 
 [See it here!](https://gavinr.github.io/esri-reveal.js-history/)
 
