@@ -4,6 +4,14 @@ var app = new Vue({
   data: {
     iframes: [
       {
+        url: `${base}fed-2023/dev-summit-2023.html`,
+        label: "Dev Summit 2023",
+      },
+      {
+        url: `${base}fed-2023/fed-gis-2023.html`,
+        label: "Federal GIS Conference 2023",
+      },
+      {
         url: `${base}uc-2022/uc-2022-technical-workshops.html`,
         label: "UC 2022",
       },
