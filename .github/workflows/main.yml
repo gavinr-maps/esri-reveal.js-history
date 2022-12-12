@@ -15,7 +15,14 @@ jobs:
         uses: actions/checkout@v2
 
       # Get copies of each esri/reveal.js release:
-      - name: Download Fed GIS and Dev Summit 2023
+      - name: Download Dev Summit 2023
+        uses: actions/checkout@v2
+        with:
+          repository: 'Esri/reveal.js'
+          ref: 'dev-summit-2023'
+          path: 'dev-summit-2023'
+
+      - name: Download Fed GIS 2023
         uses: actions/checkout@v2
         with:
           repository: 'Esri/reveal.js'

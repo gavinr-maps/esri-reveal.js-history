@@ -4,7 +4,7 @@ var app = new Vue({
   data: {
     iframes: [
       {
-        url: `${base}fed-2023/dev-summit-2023.html`,
+        url: `${base}dev-summit-2023/dev-summit-2023.html`,
         label: "Dev Summit 2023",
       },
       {
