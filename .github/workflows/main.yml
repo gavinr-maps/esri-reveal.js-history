@@ -15,6 +15,13 @@ jobs:
         uses: actions/checkout@v3
 
       # Get copies of each esri/reveal.js release:
+      - name: Download UC 2023
+        uses: actions/checkout@v3
+        with:
+          repository: 'Esri/reveal.js'
+          ref: 'uc-2023'
+          path: 'uc-2023'
+
       - name: Download Dev Summit 2023
         uses: actions/checkout@v3
         with:
