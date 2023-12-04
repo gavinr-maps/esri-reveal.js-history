@@ -15,6 +15,14 @@ jobs:
         uses: actions/checkout@v3
 
       # Get copies of each esri/reveal.js release:
+      - name: Download Fed GIS 2024
+        uses: actions/checkout@v3
+        with:
+          repository: 'Esri/reveal.js'
+          ref: 'fed-2024'
+          path: 'fed-2024'
+
+
       - name: Download UC 2023
         uses: actions/checkout@v3
         with:
