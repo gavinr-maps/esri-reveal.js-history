@@ -4,7 +4,7 @@ Showing a history of the [Esri Reveal.js conference slide templates](https://git
 
 [See it here!](https://gavinr.github.io/esri-reveal.js-history/)
 
-### Maintenance
+## Maintenance
 
 When a new release is published on [esri/reveal.js](https://github.com/esri/reveal.js):
 
