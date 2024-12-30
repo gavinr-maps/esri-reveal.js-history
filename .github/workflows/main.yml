@@ -12,144 +12,144 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Get copies of each esri/reveal.js release:
       - name: Download Dev Summit 2025
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "dev-summit-2025"
           path: "dev-summit-2025"
 
       - name: Download Fed GIS 2025
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "dev-summit-2025"
           path: "fed-2025"
 
       - name: Download UC 2024
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "uc-2024"
           path: "uc-2024"
 
       - name: Download Dev Summit 2024
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "dev-summit-2024"
           path: "dev-summit-2024"
 
       - name: Download Fed GIS 2024
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "fed-2024"
           path: "fed-2024"
 
       - name: Download UC 2023
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "uc-2023"
           path: "uc-2023"
 
       - name: Download Dev Summit 2023
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "dev-summit-2023"
           path: "dev-summit-2023"
 
       - name: Download Fed GIS 2023
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "fed-2023"
           path: "fed-2023"
 
       - name: Download UC 2022
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "uc-2022"
           path: "uc-2022"
 
       - name: Download Dev Summit 2022
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "dev-summit-2022"
           path: "dev-summit-2022"
 
       - name: Download UC 2021
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "uc-2021"
           path: "uc-2021"
 
       - name: Download Dev Summit 2021
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "dev-summit-2021"
           path: "dev-summit-2021"
 
       - name: Download UC 2020
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "uc-2020"
           path: "uc-2020"
 
       - name: Download Dev Summit 2020
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "dev-summit-2020"
           path: "dev-summit-2020"
 
       - name: Download UC 2019
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "uc-2019"
           path: "uc-2019"
 
       - name: Download Dev Summit 2019
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "dev-summit-2019"
           path: "dev-summit-2019"
 
       - name: Download Fed UC 2018
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "fed-uc-2018"
           path: "fed-uc-2018"
 
       - name: Download Dev Summit 2018
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "dev-summit-2018"
           path: "dev-summit-2018"
 
       - name: Download Dev Summit 2017
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "dev-summit-2017"
           path: "dev-summit-2017"
 
       - name: Download Dev Summit 2016
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
           ref: "dev-summit-2016"
