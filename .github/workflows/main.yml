@@ -19,14 +19,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
-          ref: "dev-summit-2025"
+          ref: "dev-summit-2025.1"
           path: "dev-summit-2025"
 
       - name: Download Fed GIS 2025
         uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
-          ref: "dev-summit-2025"
+          ref: "dev-summit-2025.1"
           path: "fed-2025"
 
       - name: Download UC 2024
