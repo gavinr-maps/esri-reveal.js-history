@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: "Esri/reveal.js"
-          ref: "dev-summit-2025.1"
+          ref: "dev-summit-2025.2"
           path: "dev-summit-2025"
 
       - name: Download Fed GIS 2025
