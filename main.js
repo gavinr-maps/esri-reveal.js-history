@@ -4,6 +4,9 @@ var app = new Vue({
   data: {
     iframes: [
       {
+        url: `${base}fed-2026/fed-2026.html`,
+        label: "FedGIS 2026",
+      }, {
         url: `${base}uc-2025/uc-2025.html`,
         label: "UC 2025",
       }, {
@@ -20,7 +23,7 @@ var app = new Vue({
         label: "Dev Summit 2024",
       }, {
         url: `${base}fed-2024/fed-gis-2024.html`,
-        label: "Federal GIS Conference 2024",
+        label: "FedGIS 2024",
       },
       {
         url: `${base}uc-2023/uc-2023.html`,
@@ -32,7 +35,7 @@ var app = new Vue({
       },
       {
         url: `${base}fed-2023/fed-gis-2023.html`,
-        label: "Federal GIS Conference 2023",
+        label: "FedGIS 2023",
       },
       {
         url: `${base}uc-2022/uc-2022-technical-workshops.html`,
@@ -44,7 +47,7 @@ var app = new Vue({
       },
       {
         url: `${base}dev-summit-2022/fed-gis-2022.html`,
-        label: "Federal GIS Conference 2022",
+        label: "FedGIS 2022",
       },
       {
         url: `${base}uc-2021/uc-2021-tech-session.html`,
